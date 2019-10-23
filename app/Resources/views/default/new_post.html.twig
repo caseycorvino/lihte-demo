@@ -1,0 +1,18 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <h1>{{ title }}</h1>
+    <form method="post">
+        <label for="post-title">Title</label><br>
+        <input id="post-title" type="text" name="post-title"/><br>
+        <label for="post-body">Body</label><br>
+        <textarea id="post-body" name="post-body" placeholder="Enter text here ..."></textarea><br>
+        <input type="submit"/><br>
+    </form>
+    <style>
+        .box{
+
+        }
+    </style>
+{% endblock %}
+
