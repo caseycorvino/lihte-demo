@@ -19,11 +19,14 @@ class DefaultController extends Controller
     }
 
     /**
-     * @Route("/feed", name="homepage")
+     * @Route("/feed", name="feed")
      */
     public function feedAction(Request $request)
     {
         //TODO: get all posts and render twig file with posts
+        return $this->render('default/new_post.html.twig', [
+            "title" => "New Post"
+        ]);
 
     }
 
